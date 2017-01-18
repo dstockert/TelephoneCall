@@ -5,12 +5,13 @@ class TelephoneCall {
   
   public static void main(String args[]) {
     
-    Scanner input = new Scanner(System.in());
+    Scanner input = new Scanner(System.in);
     DecimalFormat twoDec = new DecimalFormat("0.00");
     
-    double time, cost;
+    double time;
+    double cost = 0;
     final double FLAT_RATE = 2;
-    final doble LONG = 0.4;
+    final double LONG = 0.4;
     final double SHORT = 0.5;
     
     System.out.print("Please enter the amount of minutes of your phone call: ");
@@ -19,11 +20,11 @@ class TelephoneCall {
     if (time > 2) {
       cost = FLAT_RATE;
     } else if (time > 2 && time <= 30) {
-      cost = FLATE_RATE + (time - 2) * SHORT;
+      cost = FLAT_RATE + ((time - 2) * SHORT);
     } else if (time > 30) {
-      cost = FLATE_RATE + (time - 2) * LONG;
+      cost = FLAT_RATE + ((time - 2) * LONG);
     }
     
-    System.out.println("The cost for your " + (int)time + " minute phone call is $" + twoDec(cost) + ".");
+    System.out.println("The cost for your " + (int)time + " minute phone call is $" + twoDec.format(cost) + ".");
   }
 }
