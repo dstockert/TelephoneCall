@@ -1,12 +1,14 @@
-*.class
+import java.util.Scanner;
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.ear
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+class TelephoneCall {
+  
+  public static void main(String args[]) {
+    
+    Scanner input = new Scanner(System.in());
+    
+    double time;
+    final double FLAT_RATE = 2;
+    final doble LONG = 0.4;
+    final double SHORT = 0.5;
+  }
+}
